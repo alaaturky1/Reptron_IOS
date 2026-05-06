@@ -1,0 +1,815 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F0000102A00000100000001 /* SupplementStoreApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000002A00000100000001 /* SupplementStoreApp.swift */; };
+		1F0000112A00000100000001 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000012A00000100000001 /* ContentView.swift */; };
+		1F0000202A00000100000001 /* BillingInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000202A00000000000001 /* BillingInfo.swift */; };
+		1F0000212A00000100000001 /* CartItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000212A00000000000001 /* CartItem.swift */; };
+		1F0000222A00000100000001 /* Coach.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000222A00000000000001 /* Coach.swift */; };
+		1F0000232A00000100000001 /* Equipment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000232A00000000000001 /* Equipment.swift */; };
+		1F0000242A00000100000001 /* HomeProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000242A00000000000001 /* HomeProduct.swift */; };
+		1F0000252A00000100000001 /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000252A00000000000001 /* Product.swift */; };
+		1F0000262A00000100000001 /* Purchase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000262A00000000000001 /* Purchase.swift */; };
+		1F0000272A00000100000001 /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000272A00000000000001 /* CartViewModel.swift */; };
+		1F0000282A00000100000001 /* CoachesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000282A00000000000001 /* CoachesViewModel.swift */; };
+		1F0000292A00000100000001 /* EquipmentsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000292A00000000000001 /* EquipmentsViewModel.swift */; };
+		1F00002A2A00000100000001 /* PurchaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00002A2A00000000000001 /* PurchaseViewModel.swift */; };
+		1F00002B2A00000100000001 /* StoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00002B2A00000000000001 /* StoreViewModel.swift */; };
+		1F00002C2A00000100000001 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00002C2A00000000000001 /* UserViewModel.swift */; };
+		1F0000602A00000100000001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F0000602A00000000000001 /* Assets.xcassets */; };
+		1F1000102A00000100000001 /* AboutUsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000102A00000000000001 /* AboutUsView.swift */; };
+		1F1000112A00000100000001 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000112A00000000000001 /* LoginView.swift */; };
+		1F1000122A00000100000001 /* RegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000122A00000000000001 /* RegisterView.swift */; };
+		A1CHGPW022F00001000000001 /* ChangePasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1CHGPW012F00001000000001 /* ChangePasswordView.swift */; };
+		1F1000132A00000100000001 /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000132A00000000000001 /* CartView.swift */; };
+		1F1000142A00000100000001 /* CheckoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000142A00000000000001 /* CheckoutView.swift */; };
+		1F1000152A00000100000001 /* CoachDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000152A00000000000001 /* CoachDetailsView.swift */; };
+		1F1000162A00000100000001 /* CoachesProfilesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000162A00000000000001 /* CoachesProfilesView.swift */; };
+		1F1000172A00000100000001 /* CoachesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000172A00000000000001 /* CoachesView.swift */; };
+		1F1000182A00000100000001 /* EquipmentsDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000182A00000000000001 /* EquipmentsDetailsView.swift */; };
+		1F1000192A00000100000001 /* EquipmentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000192A00000000000001 /* EquipmentsView.swift */; };
+		1F10001A2A00000100000001 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001A2A00000000000001 /* HomeView.swift */; };
+		1F10001B2A00000100000001 /* MyPurchasesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001B2A00000000000001 /* MyPurchasesView.swift */; };
+		1F10001C2A00000100000001 /* NotFoundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001C2A00000000000001 /* NotFoundView.swift */; };
+		1F10001D2A00000100000001 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001D2A00000000000001 /* RootView.swift */; };
+		1F10001E2A00000100000001 /* ProductDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001E2A00000000000001 /* ProductDetailsView.swift */; };
+		1F10001F2A00000100000001 /* StoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00001F2A00000000000001 /* StoreView.swift */; };
+		1F1000302A00000100000001 /* BlogCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000302A00000000000002 /* BlogCard.swift */; };
+		1F1000312A00000100000001 /* CategoryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000312A00000000000002 /* CategoryButton.swift */; };
+		1F1000322A00000100000001 /* FeatureCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000322A00000000000002 /* FeatureCard.swift */; };
+		1F1000332A00000100000001 /* ProductCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000332A00000000000002 /* ProductCard.swift */; };
+		1F1000342A00000100000001 /* ScrollToTopButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000342A00000000000002 /* ScrollToTopButton.swift */; };
+		1F1000352A00000100000001 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000352A00000000000002 /* SearchBar.swift */; };
+		1F1000362A00000100000001 /* TestimonialCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000362A00000000000002 /* TestimonialCard.swift */; };
+		1F1000372A00000100000001 /* WorkoutCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000372A00000000000002 /* WorkoutCard.swift */; };
+		1F1000382A00000100000001 /* FooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000382A00000000000002 /* FooterView.swift */; };
+		1F1000392A00000100000001 /* LayoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000392A00000000000002 /* LayoutView.swift */; };
+		1F10003A2A00000100000001 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00003A2A00000000000002 /* MainTabView.swift */; };
+		1F10003C2A00000100000001 /* View+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00003C2A00000000000002 /* View+Extensions.swift */; };
+		1F10003D2A00000100000001 /* View+Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00003D2A00000000000002 /* View+Navigation.swift */; };
+		1F10003E2A00000100000001 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00003E2A00000000000002 /* APIService.swift */; };
+		1F10003F2A00000100000001 /* NetworkError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F00003F2A00000000000002 /* NetworkError.swift */; };
+		1F1000402A00000100000001 /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000402A00000000000002 /* AuthService.swift */; };
+		1F1000452A00000100000001 /* AuthSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000452A00000000000002 /* AuthSessionManager.swift */; };
+		1F1000412A00000100000001 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000412A00000000000002 /* NavigationCoordinator.swift */; };
+		1F1000422A00000100000001 /* NavigationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000422A00000000000002 /* NavigationPath.swift */; };
+		1F1000432A00000100000001 /* NavigationRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000432A00000000000002 /* NavigationRouter.swift */; };
+		1F1000442A00000100000001 /* ProtectedRoute.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000442A00000000000002 /* ProtectedRoute.swift */; };
+		1F1000512A00000100000001 /* WorkoutProgramDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F0000512A00000000000001 /* WorkoutProgramDetailsView.swift */; };
+		6CF78D082EF6DEB000D7C986 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF78D072EF6DEB000D7C986 /* ProfileView.swift */; };
+		6CF78D0A2EF6DF6E00D7C986 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CF78D092EF6DF6E00D7C986 /* User.swift */; };
+		A1APIEP022E09000100000001 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1APIEP012E09000100000001 /* APIEndpoints.swift */; };
+		A1WFMB012F11000100000001 /* WorkoutFitnessModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR012F11000100000001 /* WorkoutFitnessModels.swift */; };
+		A1WFMB022F11000100000001 /* SampleBufferJPEGExporter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR022F11000100000001 /* SampleBufferJPEGExporter.swift */; };
+		A1WFMB032F11000100000001 /* WorkoutAnalysisMode.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR032F11000100000001 /* WorkoutAnalysisMode.swift */; };
+		A1WFMB042F11000100000001 /* AIFitnessAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR042F11000100000001 /* AIFitnessAPIService.swift */; };
+		A1WFMB052F11000100000001 /* WorkoutHistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR052F11000100000001 /* WorkoutHistoryStore.swift */; };
+		A1WFMB062F11000100000001 /* WorkoutAnalysisSampleBufferSink.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR062F11000100000001 /* WorkoutAnalysisSampleBufferSink.swift */; };
+		A1WFMB072F11000100000001 /* WorkoutAnalysisHub.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR072F11000100000001 /* WorkoutAnalysisHub.swift */; };
+		A1WFMB082F11000100000001 /* WorkoutFlowViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR082F11000100000001 /* WorkoutFlowViewModel.swift */; };
+		A1WFMB0E2F11000100000001 /* AIFitnessCoachRootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR0E2F11000100000001 /* AIFitnessCoachRootView.swift */; };
+		A1WFMB0B2F11000100000001 /* WorkoutResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR0B2F11000100000001 /* WorkoutResultView.swift */; };
+		A1WFMB0C2F11000100000001 /* WorkoutHistoryListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1WFMR0C2F11000100000001 /* WorkoutHistoryListView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1F0000002A00000100000001 /* SupplementStoreApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SupplementStoreApp.swift; sourceTree = "<group>"; };
+		1F0000012A00000100000001 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1F0000102A00000000000001 /* AboutUsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUsView.swift; sourceTree = "<group>"; };
+		1F0000112A00000000000001 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		1F0000122A00000000000001 /* RegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterView.swift; sourceTree = "<group>"; };
+		A1CHGPW012F00001000000001 /* ChangePasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordView.swift; sourceTree = "<group>"; };
+		1F0000132A00000000000001 /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
+		1F0000142A00000000000001 /* CheckoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutView.swift; sourceTree = "<group>"; };
+		1F0000152A00000000000001 /* CoachDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachDetailsView.swift; sourceTree = "<group>"; };
+		1F0000162A00000000000001 /* CoachesProfilesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesProfilesView.swift; sourceTree = "<group>"; };
+		1F0000172A00000000000001 /* CoachesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesView.swift; sourceTree = "<group>"; };
+		1F0000182A00000000000001 /* EquipmentsDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsDetailsView.swift; sourceTree = "<group>"; };
+		1F0000192A00000000000001 /* EquipmentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsView.swift; sourceTree = "<group>"; };
+		1F00001A2A00000000000001 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		1F00001B2A00000000000001 /* MyPurchasesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPurchasesView.swift; sourceTree = "<group>"; };
+		1F00001C2A00000000000001 /* NotFoundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotFoundView.swift; sourceTree = "<group>"; };
+		1F00001D2A00000000000001 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		1F00001E2A00000000000001 /* ProductDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductDetailsView.swift; sourceTree = "<group>"; };
+		1F00001F2A00000000000001 /* StoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreView.swift; sourceTree = "<group>"; };
+		1F0000202A00000000000001 /* BillingInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillingInfo.swift; sourceTree = "<group>"; };
+		1F0000212A00000000000001 /* CartItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartItem.swift; sourceTree = "<group>"; };
+		1F0000222A00000000000001 /* Coach.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coach.swift; sourceTree = "<group>"; };
+		1F0000232A00000000000001 /* Equipment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equipment.swift; sourceTree = "<group>"; };
+		1F0000242A00000000000001 /* HomeProduct.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProduct.swift; sourceTree = "<group>"; };
+		1F0000252A00000000000001 /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		1F0000262A00000000000001 /* Purchase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Purchase.swift; sourceTree = "<group>"; };
+		1F0000272A00000000000001 /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
+		1F0000282A00000000000001 /* CoachesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachesViewModel.swift; sourceTree = "<group>"; };
+		1F0000292A00000000000001 /* EquipmentsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentsViewModel.swift; sourceTree = "<group>"; };
+		1F00002A2A00000000000001 /* PurchaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseViewModel.swift; sourceTree = "<group>"; };
+		1F00002B2A00000000000001 /* StoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreViewModel.swift; sourceTree = "<group>"; };
+		1F00002C2A00000000000001 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		1F0000302A00000000000002 /* BlogCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlogCard.swift; sourceTree = "<group>"; };
+		1F0000312A00000000000002 /* CategoryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryButton.swift; sourceTree = "<group>"; };
+		1F0000322A00000000000002 /* FeatureCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeatureCard.swift; sourceTree = "<group>"; };
+		1F0000332A00000000000002 /* ProductCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductCard.swift; sourceTree = "<group>"; };
+		1F0000342A00000000000002 /* ScrollToTopButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollToTopButton.swift; sourceTree = "<group>"; };
+		1F0000352A00000000000002 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		1F0000362A00000000000002 /* TestimonialCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestimonialCard.swift; sourceTree = "<group>"; };
+		1F0000372A00000000000002 /* WorkoutCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutCard.swift; sourceTree = "<group>"; };
+		1F0000382A00000000000002 /* FooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooterView.swift; sourceTree = "<group>"; };
+		1F0000392A00000000000002 /* LayoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LayoutView.swift; sourceTree = "<group>"; };
+		1F00003A2A00000000000002 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		1F00003C2A00000000000002 /* View+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Extensions.swift"; sourceTree = "<group>"; };
+		1F00003D2A00000000000002 /* View+Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+Navigation.swift"; sourceTree = "<group>"; };
+		1F00003E2A00000000000002 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		1F00003F2A00000000000002 /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
+		1F0000402A00000000000002 /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		1F0000452A00000000000002 /* AuthSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthSessionManager.swift; sourceTree = "<group>"; };
+		1F0000412A00000000000002 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		1F0000422A00000000000002 /* NavigationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationPath.swift; sourceTree = "<group>"; };
+		1F0000432A00000000000002 /* NavigationRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationRouter.swift; sourceTree = "<group>"; };
+		1F0000442A00000000000002 /* ProtectedRoute.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedRoute.swift; sourceTree = "<group>"; };
+		1F0000502A00000000000001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1F0000512A00000000000001 /* WorkoutProgramDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutProgramDetailsView.swift; sourceTree = "<group>"; };
+		1F0000602A00000000000001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F0010002A00000100000001 /* SupplementStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SupplementStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CF78D072EF6DEB000D7C986 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6CF78D092EF6DF6E00D7C986 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		A1APIEP012E09000100000001 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		A1WFMR012F11000100000001 /* WorkoutFitnessModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFitnessModels.swift; sourceTree = "<group>"; };
+		A1WFMR022F11000100000001 /* SampleBufferJPEGExporter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleBufferJPEGExporter.swift; sourceTree = "<group>"; };
+		A1WFMR032F11000100000001 /* WorkoutAnalysisMode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAnalysisMode.swift; sourceTree = "<group>"; };
+		A1WFMR042F11000100000001 /* AIFitnessAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIFitnessAPIService.swift; sourceTree = "<group>"; };
+		A1WFMR052F11000100000001 /* WorkoutHistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryStore.swift; sourceTree = "<group>"; };
+		A1WFMR062F11000100000001 /* WorkoutAnalysisSampleBufferSink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAnalysisSampleBufferSink.swift; sourceTree = "<group>"; };
+		A1WFMR072F11000100000001 /* WorkoutAnalysisHub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutAnalysisHub.swift; sourceTree = "<group>"; };
+		A1WFMR082F11000100000001 /* WorkoutFlowViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFlowViewModel.swift; sourceTree = "<group>"; };
+		A1WFMR0E2F11000100000001 /* AIFitnessCoachRootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AIFitnessCoachRootView.swift; sourceTree = "<group>"; };
+		A1WFMR0B2F11000100000001 /* WorkoutResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutResultView.swift; sourceTree = "<group>"; };
+		A1WFMR0C2F11000100000001 /* WorkoutHistoryListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutHistoryListView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F0020002A00000100000001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F0011002A00000100000001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F0010002A00000100000001 /* SupplementStore.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F0030002A00000100000001 = {
+			isa = PBXGroup;
+			children = (
+				1F0031002A00000100000001 /* SupplementStore */,
+				1F0011002A00000100000001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F0031002A00000100000001 /* SupplementStore */ = {
+			isa = PBXGroup;
+			children = (
+				1F0032002A00000100000001 /* App */,
+				1F0033002A00000100000001 /* Views */,
+				1F0034002A00000100000001 /* Components */,
+				1F0035002A00000100000001 /* Models */,
+				1F0036002A00000100000001 /* ViewModels */,
+				1F0037002A00000100000001 /* Services */,
+				1F0038002A00000100000001 /* Utilities */,
+				1F0039002A00000100000001 /* Extensions */,
+				1F003A002A00000100000001 /* Resources */,
+				1F0000502A00000000000001 /* Info.plist */,
+			);
+			path = SupplementStore;
+			sourceTree = "<group>";
+		};
+		1F0032002A00000100000001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000002A00000100000001 /* SupplementStoreApp.swift */,
+				1F0000012A00000100000001 /* ContentView.swift */,
+				6CF78D072EF6DEB000D7C986 /* ProfileView.swift */,
+				6CF78D092EF6DF6E00D7C986 /* User.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1F0033002A00000100000001 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F0033102A00000100000001 /* AboutUs */,
+				1F0033202A00000100000001 /* Auth */,
+				1F0033302A00000100000001 /* Cart */,
+				1F0033402A00000100000001 /* Checkout */,
+				1F0033502A00000100000001 /* Coaches */,
+				1F0033602A00000100000001 /* Equipments */,
+				A1WFGRP402F11000100000001 /* Fitness */,
+				1F0033702A00000100000001 /* Home */,
+				1F0033802A00000100000001 /* MyPurchases */,
+				1F0033902A00000100000001 /* NotFound */,
+				1F0033A02A00000100000001 /* Store */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1F0033102A00000100000001 /* AboutUs */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000102A00000000000001 /* AboutUsView.swift */,
+			);
+			path = AboutUs;
+			sourceTree = "<group>";
+		};
+		1F0033202A00000100000001 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000112A00000000000001 /* LoginView.swift */,
+				1F0000122A00000000000001 /* RegisterView.swift */,
+				A1CHGPW012F00001000000001 /* ChangePasswordView.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1F0033302A00000100000001 /* Cart */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000132A00000000000001 /* CartView.swift */,
+			);
+			path = Cart;
+			sourceTree = "<group>";
+		};
+		1F0033402A00000100000001 /* Checkout */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000142A00000000000001 /* CheckoutView.swift */,
+			);
+			path = Checkout;
+			sourceTree = "<group>";
+		};
+		1F0033502A00000100000001 /* Coaches */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000152A00000000000001 /* CoachDetailsView.swift */,
+				1F0000162A00000000000001 /* CoachesProfilesView.swift */,
+				1F0000172A00000000000001 /* CoachesView.swift */,
+			);
+			path = Coaches;
+			sourceTree = "<group>";
+		};
+		1F0033602A00000100000001 /* Equipments */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000182A00000000000001 /* EquipmentsDetailsView.swift */,
+				1F0000192A00000000000001 /* EquipmentsView.swift */,
+			);
+			path = Equipments;
+			sourceTree = "<group>";
+		};
+		1F0033702A00000100000001 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				1F00001A2A00000000000001 /* HomeView.swift */,
+				1F0000512A00000000000001 /* WorkoutProgramDetailsView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		1F0033802A00000100000001 /* MyPurchases */ = {
+			isa = PBXGroup;
+			children = (
+				1F00001B2A00000000000001 /* MyPurchasesView.swift */,
+			);
+			path = MyPurchases;
+			sourceTree = "<group>";
+		};
+		1F0033902A00000100000001 /* NotFound */ = {
+			isa = PBXGroup;
+			children = (
+				1F00001C2A00000000000001 /* NotFoundView.swift */,
+			);
+			path = NotFound;
+			sourceTree = "<group>";
+		};
+		1F0033A02A00000100000001 /* Store */ = {
+			isa = PBXGroup;
+			children = (
+				1F00001D2A00000000000001 /* RootView.swift */,
+				1F00001E2A00000000000001 /* ProductDetailsView.swift */,
+				1F00001F2A00000000000001 /* StoreView.swift */,
+			);
+			path = Store;
+			sourceTree = "<group>";
+		};
+		1F0034002A00000100000001 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				1F0034102A00000100000001 /* Common */,
+				1F0034202A00000100000001 /* Layout */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		1F0034102A00000100000001 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000302A00000000000002 /* BlogCard.swift */,
+				1F0000312A00000000000002 /* CategoryButton.swift */,
+				1F0000322A00000000000002 /* FeatureCard.swift */,
+				1F0000332A00000000000002 /* ProductCard.swift */,
+				1F0000342A00000000000002 /* ScrollToTopButton.swift */,
+				1F0000352A00000000000002 /* SearchBar.swift */,
+				1F0000362A00000000000002 /* TestimonialCard.swift */,
+				1F0000372A00000000000002 /* WorkoutCard.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		1F0034202A00000100000001 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000382A00000000000002 /* FooterView.swift */,
+				1F0000392A00000000000002 /* LayoutView.swift */,
+				1F00003A2A00000000000002 /* MainTabView.swift */,
+			);
+			path = Layout;
+			sourceTree = "<group>";
+		};
+		1F0035002A00000100000001 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A1WFGRP202F11000100000001 /* Fitness */,
+				1F0000202A00000000000001 /* BillingInfo.swift */,
+				1F0000212A00000000000001 /* CartItem.swift */,
+				1F0000222A00000000000001 /* Coach.swift */,
+				1F0000232A00000000000001 /* Equipment.swift */,
+				1F0000242A00000000000001 /* HomeProduct.swift */,
+				1F0000252A00000000000001 /* Product.swift */,
+				1F0000262A00000000000001 /* Purchase.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1F0036002A00000100000001 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000272A00000000000001 /* CartViewModel.swift */,
+				1F0000282A00000000000001 /* CoachesViewModel.swift */,
+				1F0000292A00000000000001 /* EquipmentsViewModel.swift */,
+				1F00002A2A00000000000001 /* PurchaseViewModel.swift */,
+				1F00002B2A00000000000001 /* StoreViewModel.swift */,
+				1F00002C2A00000000000001 /* UserViewModel.swift */,
+				A1WFMR072F11000100000001 /* WorkoutAnalysisHub.swift */,
+				A1WFMR082F11000100000001 /* WorkoutFlowViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1F0037002A00000100000001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1F0037102A00000100000001 /* API */,
+				1F0037202A00000100000001 /* Auth */,
+				A1WFGRP302F11000100000001 /* Fitness */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1F0037102A00000100000001 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1F00003E2A00000000000002 /* APIService.swift */,
+				1F00003F2A00000000000002 /* NetworkError.swift */,
+				A1APIBK012E09000100000001 /* Backend */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		1F0037202A00000100000001 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000402A00000000000002 /* AuthService.swift */,
+				1F0000452A00000000000002 /* AuthSessionManager.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		1F0038002A00000100000001 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000412A00000000000002 /* NavigationCoordinator.swift */,
+				1F0000422A00000000000002 /* NavigationPath.swift */,
+				1F0000432A00000000000002 /* NavigationRouter.swift */,
+				1F0000442A00000000000002 /* ProtectedRoute.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		1F0039002A00000100000001 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1F00003C2A00000000000002 /* View+Extensions.swift */,
+				1F00003D2A00000000000002 /* View+Navigation.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1F003A002A00000100000001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1F003A102A00000100000001 /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1F003A102A00000100000001 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1F0000602A00000000000001 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A1APIBK012E09000100000001 /* Backend */ = {
+			isa = PBXGroup;
+			children = (
+				A1APIEP012E09000100000001 /* APIEndpoints.swift */,
+			);
+			path = Backend;
+			sourceTree = "<group>";
+		};
+		A1WFGRP202F11000100000001 /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				A1WFMR012F11000100000001 /* WorkoutFitnessModels.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+		A1WFGRP302F11000100000001 /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				A1WFMR022F11000100000001 /* SampleBufferJPEGExporter.swift */,
+				A1WFMR032F11000100000001 /* WorkoutAnalysisMode.swift */,
+				A1WFMR042F11000100000001 /* AIFitnessAPIService.swift */,
+				A1WFMR052F11000100000001 /* WorkoutHistoryStore.swift */,
+				A1WFMR062F11000100000001 /* WorkoutAnalysisSampleBufferSink.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+		A1WFGRP402F11000100000001 /* Fitness */ = {
+			isa = PBXGroup;
+			children = (
+				A1WFMR0E2F11000100000001 /* AIFitnessCoachRootView.swift */,
+				A1WFMR0B2F11000100000001 /* WorkoutResultView.swift */,
+				A1WFMR0C2F11000100000001 /* WorkoutHistoryListView.swift */,
+			);
+			path = Fitness;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F0040002A00000100000001 /* SupplementStore */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F0060002A00000100000001 /* Build configuration list for PBXNativeTarget "SupplementStore" */;
+			buildPhases = (
+				1F001F002A00000100000001 /* Sources */,
+				1F0020002A00000100000001 /* Frameworks */,
+				1F0021002A00000100000001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SupplementStore;
+			productName = SupplementStore;
+			productReference = 1F0010002A00000100000001 /* SupplementStore.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F0050002A00000100000001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 2640;
+				TargetAttributes = {
+					1F0040002A00000100000001 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 1F0051002A00000100000001 /* Build configuration list for PBXProject "SupplementStore" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F0030002A00000100000001;
+			productRefGroup = 1F0011002A00000100000001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F0040002A00000100000001 /* SupplementStore */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F0021002A00000100000001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0000602A00000100000001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F001F002A00000100000001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F0000102A00000100000001 /* SupplementStoreApp.swift in Sources */,
+				1F0000112A00000100000001 /* ContentView.swift in Sources */,
+				1F0000202A00000100000001 /* BillingInfo.swift in Sources */,
+				1F0000212A00000100000001 /* CartItem.swift in Sources */,
+				1F0000222A00000100000001 /* Coach.swift in Sources */,
+				1F0000232A00000100000001 /* Equipment.swift in Sources */,
+				1F0000242A00000100000001 /* HomeProduct.swift in Sources */,
+				1F0000252A00000100000001 /* Product.swift in Sources */,
+				1F0000262A00000100000001 /* Purchase.swift in Sources */,
+				1F0000272A00000100000001 /* CartViewModel.swift in Sources */,
+				1F0000282A00000100000001 /* CoachesViewModel.swift in Sources */,
+				1F0000292A00000100000001 /* EquipmentsViewModel.swift in Sources */,
+				1F00002A2A00000100000001 /* PurchaseViewModel.swift in Sources */,
+				1F00002B2A00000100000001 /* StoreViewModel.swift in Sources */,
+				1F00002C2A00000100000001 /* UserViewModel.swift in Sources */,
+				1F1000102A00000100000001 /* AboutUsView.swift in Sources */,
+				1F1000112A00000100000001 /* LoginView.swift in Sources */,
+				1F1000122A00000100000001 /* RegisterView.swift in Sources */,
+				A1CHGPW022F00001000000001 /* ChangePasswordView.swift in Sources */,
+				1F1000132A00000100000001 /* CartView.swift in Sources */,
+				1F1000142A00000100000001 /* CheckoutView.swift in Sources */,
+				1F1000152A00000100000001 /* CoachDetailsView.swift in Sources */,
+				1F1000162A00000100000001 /* CoachesProfilesView.swift in Sources */,
+				1F1000172A00000100000001 /* CoachesView.swift in Sources */,
+				1F1000182A00000100000001 /* EquipmentsDetailsView.swift in Sources */,
+				1F1000192A00000100000001 /* EquipmentsView.swift in Sources */,
+				1F10001A2A00000100000001 /* HomeView.swift in Sources */,
+				1F1000512A00000100000001 /* WorkoutProgramDetailsView.swift in Sources */,
+				1F10001B2A00000100000001 /* MyPurchasesView.swift in Sources */,
+				1F10001C2A00000100000001 /* NotFoundView.swift in Sources */,
+				6CF78D082EF6DEB000D7C986 /* ProfileView.swift in Sources */,
+				1F10001D2A00000100000001 /* RootView.swift in Sources */,
+				1F10001E2A00000100000001 /* ProductDetailsView.swift in Sources */,
+				1F10001F2A00000100000001 /* StoreView.swift in Sources */,
+				1F1000302A00000100000001 /* BlogCard.swift in Sources */,
+				1F1000312A00000100000001 /* CategoryButton.swift in Sources */,
+				1F1000322A00000100000001 /* FeatureCard.swift in Sources */,
+				1F1000332A00000100000001 /* ProductCard.swift in Sources */,
+				1F1000342A00000100000001 /* ScrollToTopButton.swift in Sources */,
+				1F1000352A00000100000001 /* SearchBar.swift in Sources */,
+				1F1000362A00000100000001 /* TestimonialCard.swift in Sources */,
+				1F1000372A00000100000001 /* WorkoutCard.swift in Sources */,
+				1F1000382A00000100000001 /* FooterView.swift in Sources */,
+				1F1000392A00000100000001 /* LayoutView.swift in Sources */,
+				6CF78D0A2EF6DF6E00D7C986 /* User.swift in Sources */,
+				1F10003A2A00000100000001 /* MainTabView.swift in Sources */,
+				1F10003C2A00000100000001 /* View+Extensions.swift in Sources */,
+				1F10003D2A00000100000001 /* View+Navigation.swift in Sources */,
+				1F10003E2A00000100000001 /* APIService.swift in Sources */,
+				1F10003F2A00000100000001 /* NetworkError.swift in Sources */,
+				1F1000402A00000100000001 /* AuthService.swift in Sources */,
+				1F1000452A00000100000001 /* AuthSessionManager.swift in Sources */,
+				1F1000412A00000100000001 /* NavigationCoordinator.swift in Sources */,
+				1F1000422A00000100000001 /* NavigationPath.swift in Sources */,
+				1F1000432A00000100000001 /* NavigationRouter.swift in Sources */,
+				1F1000442A00000100000001 /* ProtectedRoute.swift in Sources */,
+				A1APIEP022E09000100000001 /* APIEndpoints.swift in Sources */,
+				A1WFMB012F11000100000001 /* WorkoutFitnessModels.swift in Sources */,
+				A1WFMB022F11000100000001 /* SampleBufferJPEGExporter.swift in Sources */,
+				A1WFMB032F11000100000001 /* WorkoutAnalysisMode.swift in Sources */,
+				A1WFMB042F11000100000001 /* AIFitnessAPIService.swift in Sources */,
+				A1WFMB052F11000100000001 /* WorkoutHistoryStore.swift in Sources */,
+				A1WFMB062F11000100000001 /* WorkoutAnalysisSampleBufferSink.swift in Sources */,
+				A1WFMB072F11000100000001 /* WorkoutAnalysisHub.swift in Sources */,
+				A1WFMB082F11000100000001 /* WorkoutFlowViewModel.swift in Sources */,
+				A1WFMB0E2F11000100000001 /* AIFitnessCoachRootView.swift in Sources */,
+				A1WFMB0B2F11000100000001 /* WorkoutResultView.swift in Sources */,
+				A1WFMB0C2F11000100000001 /* WorkoutHistoryListView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1F0052002A00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1F0053002A00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F0061002A00000100000001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2UX85C42D9;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SupplementStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.aturky.SupplementStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1F0062002A00000100000001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 2UX85C42D9;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SupplementStore/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aturky.SupplementStore;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F0051002A00000100000001 /* Build configuration list for PBXProject "SupplementStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0052002A00000100000001 /* Debug */,
+				1F0053002A00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F0060002A00000100000001 /* Build configuration list for PBXNativeTarget "SupplementStore" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F0061002A00000100000001 /* Debug */,
+				1F0062002A00000100000001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F0050002A00000100000001 /* Project object */;
+}
